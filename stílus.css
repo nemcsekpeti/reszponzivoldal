@@ -1,8 +1,10 @@
 @charset "utf-8";
+
 *
 {
     box-sizing: border-box;
 }
+
 main
 {
     display: grid;
@@ -12,41 +14,50 @@ main
     "n a a a"
     "f f f f";
 }
+
 header
 {
     grid-area: h;
 }
+
 nav
 {
     grid-area: n;
 }
+
 article
 {
     grid-area: a;
 }
+
 footer
 {  
     grid-area: f;
 }
+
 header, nav, article, footer, main
 {
     border-style: groove;
 }
+
 nav a
 {
     text-decoration: none;
     display: block;
     color: lightskyblue;
 }
+
 nav ul
 {
     list-style-type: none;
     padding: 0;
 }
+
 nav a:hover
 {
     color: grey;
 }
+
 main
 {
     text-align: justify;
@@ -54,10 +65,25 @@ main
     max-width: 800px;
     margin: auto;
 }
+
 body
 {
     margin: 0;
 }
+
+/*Űrlap formázása*/
+#nevek
+{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+#nevek label
+{
+    text-align: right;
+    padding-right: 5px;
+}
+
 @media screen and (max-width: 600px)
 {
     main
@@ -65,6 +91,7 @@ body
         width: 100%;
     }
 }
+
 @media screen and (max-width: 500px)
 {
     main
@@ -75,10 +102,21 @@ body
         "n"
         "f";
     }
+
     /*navigáció elemei egymás mellé*/
     nav ul
     {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #nevek
+    {
+    grid-template-columns: auto;
+    }
+    
+    #nevek label
+    {
+    text-align: left;
     }
 }

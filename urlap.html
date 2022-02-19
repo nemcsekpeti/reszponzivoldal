@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Űrlapok használata">
+    <meta name="keywords" content="Űrlap">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemcsek Péter</title>
+    <link rel="stylesheet" href="stílus.css">
+</head>
+<body>
+    <main>
+        <header>Űrlapokról</header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="urlap.html">Űrlap</a></li>
+                </ul>
+            </nav>
+            <article>
+                <form action="/action_page.php" method="get">
+                    <fieldset id="nevek">
+                        <legend>Neve: </legend>
+                        <label for="vnev">Vezetéknév: </label>
+                        <input  
+                            type="text" 
+                            id="vnev" 
+                            name="vnev" 
+                            placeholder="Vezetéknév"
+                            />
+                        <label for="knev">Keresztnév: </label>
+                        <input 
+                            type="text" 
+                            id="knev" 
+                            name="knev" 
+                            value="Péter"
+                            />
+                    </fieldset>
+                    <fieldset> 
+                        <legend>Neme: </legend>
+                        <input 
+                            type="radio" 
+                            id="neme" 
+                            name="nem" 
+                            value="férfi"
+                            />
+                        <label for="Férfi">Férfi</label><br>
+                        <input 
+                            type="radio" 
+                            id="neme" 
+                            name="nem" 
+                            value="nő"
+                            />
+                        <label for="Nő">Nő</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Kedvenc nyelve: </legend>
+                        <input 
+                            type="radio" 
+                            id="HTML" 
+                            name="language" 
+                            value="fav_language"
+                            />
+                        <label for="HTML">HTML</label><br>
+                        <input 
+                            type="radio" 
+                            id="CSS" 
+                            name="language" 
+                            value="fav_language"
+                            />
+                        <label for="CSS">CSS</label><br>
+                        <input 
+                            type="radio" 
+                            id="JavaScript" 
+                            name="language" 
+                            value="fav_language"
+                            />
+                        <label for="JavaScript">JavaScript</label><br>
+                        <button>OK</button>
+                    </fieldset>
+                </form>
+            </article>
+        <footer>Nemcsek Péter</footer>
+    </main>
+</body>
+</html>
